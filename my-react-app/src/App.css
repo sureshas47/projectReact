@@ -1,7 +1,12 @@
 .App {
   text-align: center;
 }
-
+.headerName{
+  color: crimson;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

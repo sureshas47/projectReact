@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import SecondComponent from './secondComponent'; //import component
+import SecondComponent from './secondComponent';
+import {Link} from "react-router-dom"; //import component
 
 class FirstComponent extends Component {
     constructor(props) { //......create a state where we can store data
@@ -49,10 +50,18 @@ class FirstComponent extends Component {
                    callFromSecondComponent={()=>this.callFromSecondComponent("suresh")} //creating props and passing function as a props
                //
                />
+                {/*change route using link and send parameter */}
+                <Link to={{
+                    pathname: "/clock",
+                    search: "?sort=name",
+                    hash: "#the-hash",
+                   // state: { fromDashboard: true }
+                }}>
+                    <button>change route</button></Link>
             </div>
         );
     }
 }
 
 export default FirstComponent;
-//lifecycly of reac-componentDidMount()
+//lifecycle of react-componentDidMount()

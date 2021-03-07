@@ -24,4 +24,4 @@ class SecondComponent extends Component {
 }
 
 export default SecondComponent;
-//child ko function pani parent le call garna milxa but references banauna parxa
+//child ko function pani parent lqe call garna milxa but references banauna parxa

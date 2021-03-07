@@ -28,8 +28,9 @@ import './App.css';
     import './App.css';
     import './index.css';
     import FirstComponent from './component/firstComponent'; //call component
-import ThirdComponent from "./component/thirdComponent";
-import DigitalClock from "./digitalClock";
+
+
+import Routes from "./routes";
 class App extends Component {
     render() {
         return (//...we can apply inline css in react within double courlie bracket
@@ -51,7 +52,7 @@ class App extends Component {
            //  </div>
 
             <div className="headerName">
-                <FirstComponent/>
+                <Routes/>
                 {/*<DigitalClock/>*/}
             </div>
         );
